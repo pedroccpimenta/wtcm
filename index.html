@@ -50,10 +50,10 @@ b=[
 	<source src="./mp3/Pavarotti - catari catari.mp3" type="audio/mp3"></audio>
 
 26 de Outubro (+23 de Novembro)
-<table><tr><td style="max-width:50%;width:50%;max-width: 90px;">
+<table><tr><td align=center>
 
-	<img src='./pics/GATO MILONGUEIRO 2 com logo CMM.jpg'>
-<td width='50%' style='width: 45%;min-width: 90px;'>
+	<img id=ppp src='./pics/GATO MILONGUEIRO 2 com logo CMM.jpg'>
+<td >
 	<input class='sb' type=radio name=b ><label></label> <br>
 	<input class='sb' type=radio name=b ><label></label> <br>
 	<input class='sb' type=radio name=b ><label></label> <br>
@@ -73,14 +73,12 @@ Complemento e trabalho de casa
 		<li>Amanda & Adrián Costa - <a href='https://www.youtube.com/watch?v=pSzHpWJdavw' target='*'>youtube.com/watch?v=pSzHpWJdavw</a>
 		<li>Amanda & Adrián Costa - <a href='https://www.youtube.com/watch?v=jN13VdGnB_A' target='*'>youtube.com/watch?v=jN13VdGnB_A</a>
 
-
-
 	</ol>		
 </table><br>
 
-
 <hr color=lime>
-<small>index.html</small>
+<small>
+&copy; GMilong, 2024
 </center>
 
 <!--
@@ -122,10 +120,37 @@ Complemento e trabalho de casa
         }
 
 
-        width = screen.width;
-        alert (width);	
 
     }
+
+function xw()
+{
+        width = screen.width;
+        width = window.innerWidth
+        // alert (width);
+        if (width<650)	
+        	document.getElementById('ppp').style.width=Math.floor((width-50)/3)
+
+      width = screen.width;
+        width = window.innerWidth
+        // alert (width);
+       // if (width<650)	
+        if (width > 1200)
+        {
+        	document.getElementById('ppp').style.width='500'
+
+        }
+        else 
+        {	
+        	document.getElementById('ppp').style.width=Math.floor((width-50)/3)
+        }
+
+}
+
+setInterval(xw, 5000)
+
+		
+
 </script>
 
 
