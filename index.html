@@ -1,0 +1,125 @@
+<html>
+<head>
+
+	<meta name="Description" content="Author: GMilong, Category: Tango, Site, Music Price: Free">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>workshop de Tango @ Capricho Moitense</title>
+	<LINK REL="SHORTCUT ICON" HREF="./pics/favicon.ico">
+
+
+<style>
+img {
+  border-radius: 8px;
+  width: 300px;
+  border:3px solid green;
+  border-style: outset;
+}
+</style>
+
+<script>
+
+b=[	
+	"./mp3/Carlos Di Sarli - Tus Palabras y La Noche (Oscar Serpa).mp3",
+		"./mp3/Carlos Di Sarli - Una Noche de Garufa [Instrumental].mp3",	
+		"./mp3/Engañame nomás - Canaro-Maida '35.mp3",	
+		"./mp3/Enrique Rodriguez - Vendras Alguna Vez (Roberto Flores).mp3",	
+		"./mp3/Orquesta Tipica Juan Maglio - Alma en pena (José Gallarza).mp3",	
+		"./mp3/Orquesta Tipica Juan Maglio - Che papusa oi.mp3",	
+		"./mp3/Osvaldo Fresedo - Isla de Capri.mp3",	
+		"./mp3/OTV - Abrojalera.mp3",	
+		"./mp3/Tanturi - Una noche de garufa.mp3",	
+		"./mp3/Lucio Demare - Mañana zarpa un barco.mp3",	
+		"./mp3/Carlos di Sarli - Y todavia te quiero.mp3",	
+
+
+	]
+
+
+</script>
+
+</head>
+	<body align=center style='font-family: montserrat;'><center>
+
+<h1>Workshop de Tango na Capricho Moitense</h1>
+<h3>(Outubro / novembro 2024)</h3>
+<!-- <small>PCP, 2023</small> -->
+<center>
+<br>
+<audio id=audio controls autoplay width='100%' style="width:100%">
+	<source src="./mp3/Pavarotti - catari catari.mp3" type="audio/mp3"></audio>
+
+26 de Outubro (+23 de Novembro)
+<table><tr><td>
+
+	<img src='./pics/GATO MILONGUEIRO 2 com logo CMM.jpg'>
+<td width='50%'>
+	<input class='sb' type=radio name=b ><label></label> <br>
+	<input class='sb' type=radio name=b ><label></label> <br>
+	<input class='sb' type=radio name=b ><label></label> <br>
+	<input class='sb' type=radio name=b ><label></label> <br>
+	<input class='sb' type=radio name=b ><label></label> <br>
+	<input class='sb' type=radio name=b ><label></label> <br>
+
+</table><br>
+
+Complemento e trabalho de casa 
+<table><tr>
+
+
+<td width='50%'>
+	<ol>
+		<li>radio Tango argentino - <a href='' target='*'>https://www.argentinetangoradio.com/</a> 
+	</ol>		
+</table><br>
+
+
+<hr color=lime>
+<small>index.html</small>
+</center>
+
+<!--
+<a href='teias.htm' target='*'>teias</a> | <a href=memoriaritmo.htm target='*'>memória</a>  | <a href=maçãs.htm target='*'>maçãs</a>
+ | <a href=metricav2.htm target='*'>metrica</a> | <a href=audicomp/elClavelito.htm target='*'>El clavelito</a>
+-->
+
+<script>
+	document.getElementById('audio').src=b[Math.floor(Math.random()*(b.length))]
+	setTimeout(function(){document.getElementById('audio').play()}, 2000)
+
+
+</script>
+
+
+<script>
+    window.onload = function() {
+    	console.log("onload")
+    	
+      tbs = document.getElementsByTagName('label');
+  		for(var i = 0; i < tbs.length; i++) {
+            tbs[i].border='1';
+            tbs.width='80%'
+      }
+
+        anchors = document.getElementsByClassName('sb');
+        lbs = document.getElementsByTagName('label');
+        for(var i = 0; i < anchors.length; i++) {
+        		console.log(i)
+            sw=Math.floor(Math.random()*b.length)
+            anchors[i].bid=sw
+            anchors[i].titulo=b[sw].split('/')[2].split(".")[0]
+            lbs[i].innerHTML=b[sw].split('/')[2].split(".")[0].substring(0,25)+" (...)"
+            anchors[i].onclick = function() {
+              	console.log(this.bid);
+                document.getElementById('audio').src=b[this.bid];
+            		document.getElementById('audio').title=this.titulo
+            }
+        }
+    }
+</script>
+
+
+
+
+	</body>
+</html>
