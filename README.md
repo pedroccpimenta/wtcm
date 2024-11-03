@@ -13,7 +13,7 @@ Esta pasta - [mp3](./mp3) - contém uma selecção de tangos 'pa escuchar y pa b
 
 | modo paisagem   | modo retrato  |
 |----------|--------|
-| <img src="./pics/screencapture-wtcm-onrender-2024-11-02-14_01_48.png" height="100">    | <img src="./pics/screencapture-wtcm-onrender-2024-11-02-14_02_26.png"  height="100"> |
+| <img src="./pics/screencapture-wtcm-onrender-2024-11-02-14_01_48.png" height="300">    | <img src="./pics/screencapture-wtcm-onrender-2024-11-02-14_02_26.png"  height="300"> |
 
 
 ... y siga el Tango!
